@@ -1,0 +1,95 @@
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .s1:hover{ 
+    scale: 1.17;
+    transition:ease 0.4s ;
+    z-index: 999;
+  }
+  .s1:hover .s2{
+    display: block;
+    transition:ease 0.4s ;
+
+
+  }
+  .h1::-webkit-scrollbar{
+    display: none;
+  }
+
+  select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background:#1e293b;
+    background-image: none;
+    flex:1;
+    padding: 0 0.5em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+    padding-left:5px ;
+  }
+
+  select::-ms-expand{
+    display: none;
+  }
+  .select{
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    width: 15vw;
+    height: 3em;
+    line-height: 3;
+    background:#1e293b ;
+    overflow: hidden;
+    border-radius: 0.25em;
+    margin-right: 20px;
+    font-size: small;
+
+  }
+  .select::after{
+    content:"\25BC";
+    position: absolute;
+    top: -13px;
+    right: 0;
+    padding: 1em;
+    background: #1e293b;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 0.25s all ease;
+  }
+
+  .select:hover::after{
+    color: #97070e;
+  }
+  .card{
+    box-shadow: 0px 4px  5px rgba(55, 54, 54, 0.541);
+  }
